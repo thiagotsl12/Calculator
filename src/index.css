@@ -1,13 +1,26 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'RobotoMono';
+  src: url('./fonts/RobotoMono-Thin.ttf');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* (*) é o seletor universal para selecionar todos componentes e aplicar a fonte robotoMono */
+* {
+  font-family: 'RobotoMono', monospace;
+}
+
+body {
+  /* para ter flexibilidade no display*/
+  display: flex;
+  /* para ocupar a tela toda*/
+  height: 100vh;
+  /* para centralizar no eixo horizontal*/
+  justify-content: center;
+  /* centralizar no eixo vertical*/
+  align-items: center;
+  /* alinhar o texto da calculadora*/ 
+  text-align: center;
+
+  /* Deninindo cor do plano de fundo da pagina*/
+  color: #fff;
+  background: linear-gradient(to right, rgb(83, 105,118), rgb(41,46,73));
 }
